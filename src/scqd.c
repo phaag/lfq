@@ -261,12 +261,12 @@ void *lfq_enqueue(queue_t *q, void * val) {
 void *lfq_dequeue(queue_t * q) {
 	_queue_t *queue = (_queue_t *)q;
 
-	if ( atomic_load(&queue->closed) )
-		return LFQ_CLOSED;
-
 	size_t eidx = lfring_dequeue(queue->aq, queue->order, false);
-	if (eidx == LFRING_EMPTY)
+	if (eidx == LFRING_EMPTY) {
+		if ( atomic_load(&queue->closed) )
+			return LFQ_CLOSED;
 		return LFQ_EMPTY;
+	}
 
 	void *val = queue->val[eidx];
 	lfring_enqueue(queue->fq, queue->order, eidx, true);

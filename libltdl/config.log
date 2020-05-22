@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3
 Primary memory available: 16.00 gigabytes
-Default processor set: 567 tasks, 2312 threads, 4 processors
-Load average: 4.57, Mach factor: 0.90
+Default processor set: 581 tasks, 2365 threads, 4 processors
+Load average: 4.22, Mach factor: 0.68
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -91,7 +91,7 @@ configure:3204: found /usr/bin/gcc
 configure:3215: result: gcc
 configure:3444: checking for C compiler version
 configure:3453: gcc --version >&5
-Apple clang version 11.0.3 (clang-1103.0.32.59)
+Apple clang version 11.0.3 (clang-1103.0.32.62)
 Target: x86_64-apple-darwin19.4.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
@@ -99,7 +99,7 @@ Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-
 configure:3464: $? = 0
 configure:3453: gcc -v >&5
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
-Apple clang version 11.0.3 (clang-1103.0.32.59)
+Apple clang version 11.0.3 (clang-1103.0.32.62)
 Target: x86_64-apple-darwin19.4.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
@@ -413,7 +413,7 @@ configure:12554: checking for shl_load
 configure:12554: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_shl_load", referenced from:
-      _main in conftest-1e4ec9.o
+      _main in conftest-676be6.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:12554: $? = 1
@@ -728,7 +728,7 @@ configure:13015: checking for argz_add
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_add", referenced from:
-      _main in conftest-faf529.o
+      _main in conftest-a8d193.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -807,7 +807,7 @@ configure:13015: checking for argz_append
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_append", referenced from:
-      _main in conftest-97cd9a.o
+      _main in conftest-e38a1a.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -886,7 +886,7 @@ configure:13015: checking for argz_count
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_count", referenced from:
-      _main in conftest-ef8911.o
+      _main in conftest-279d27.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -965,7 +965,7 @@ configure:13015: checking for argz_create_sep
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_create_sep", referenced from:
-      _main in conftest-2de51c.o
+      _main in conftest-9233be.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -1044,7 +1044,7 @@ configure:13015: checking for argz_insert
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_insert", referenced from:
-      _main in conftest-53cbc1.o
+      _main in conftest-ed12e9.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -1123,7 +1123,7 @@ configure:13015: checking for argz_next
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_next", referenced from:
-      _main in conftest-d48d14.o
+      _main in conftest-750f68.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
@@ -1202,7 +1202,7 @@ configure:13015: checking for argz_stringify
 configure:13015: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_argz_stringify", referenced from:
-      _main in conftest-d9bc50.o
+      _main in conftest-ddc385.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13015: $? = 1
