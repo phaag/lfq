@@ -1,4 +1,5 @@
 2020-05-23
+- Fix calloc size in queue_init
 - Fix compile issue on OpenBSD
 - Fix queue closed test in dequeue
 - Initial Release 1.0

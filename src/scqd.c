@@ -211,7 +211,7 @@ again:
 
 queue_t *lfq_init(size_t order) {
 
-	_queue_t *queue = calloc(1, sizeof(queue_t));
+	_queue_t *queue = calloc(1, sizeof(_queue_t));
 	if ( !queue )
 		return NULL;
 
