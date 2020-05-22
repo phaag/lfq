@@ -13,7 +13,7 @@ implementation.
 
 ## lfq usage:
 
-Copy the files in the **src** directory into your project. 
+Copy the files in the **src** directory into your project folder. 
 Include the header in your project:
 
 `#include <scqd.h>`
@@ -21,26 +21,28 @@ Include the header in your project:
 `queue_t *lfq_init(size_t order);`
 
 Initialize a new queue. The size of the queue is 2^order. Returns: 
-Pointer to new queue.
+Pointer to new queue.  
 
-`void *lfq_enqueue(queue_t *q, void *val);`
+`void *lfq_enqueue(queue_t *q, void *val);`  
 
-Puts the object *val into the queue. Returns:
-**LFQ_OK** if successful,
-**LFQ_FULL** if unsuccessful
-**LFQ_CLOSED** if queue is closed.
+Puts the object *val into the queue. Returns:  
+**LFQ_OK** if successful  
+**LFQ_FULL** if unsuccessful  
+**LFQ_CLOSED** if queue is closed.  
 
 `void *lfq_dequeue(queue_t *q);`
 
-Gets an object from the queue. Returns:
-The object, if successful
-**LFQ_EMPTY** if no objects are available
-**LFQ_CLOSED** if queue is closed.
+Gets an object from the queue. Returns:  
+The object, if successful  
+**LFQ_EMPTY** if no objects are available  
+**LFQ_CLOSED** if queue is closed.  
 
 `void lfq_close(queue_t *q);`
+
 Closes the queue. No more objects can be put in the queue.
 Remaining objects can be retrieved, until the queue is empty.
 
 `void lfq_free(queue_t *q);`
+
 Frees the memory from the queue.
 
