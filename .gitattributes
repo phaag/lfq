@@ -1,0 +1,4 @@
+*.im linguist-detectable=false
+*.am linguist-detectable=false
+*.m4 linguist-detectable=false
+*.c linguist-detectable=true
