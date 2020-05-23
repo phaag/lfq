@@ -1,6 +1,6 @@
 # **LFQ - lockfree queue**
 
-The current implementation of a **lock-free queue** is based on the paper
+The current implementation of a **lock-free queue** in C is based on the paper
 and sample code of Ruslan Nikolaev. See https://github.com/rusnikola/lfqueue
 for details. The paper describes various different methods.
 
